@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<Link rel="stylesheet" href="style.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <img class="images-lo"src="colorful-letter-gradient-logo-design_474888-2309 (1)-PhotoRoom.png-PhotoRoom.png">
+        </a>
+        <ul class="navbar">
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Pages</li>
+            <li><a href="#"></a>Shop</li>
+            <li><a href="#"></a>News</li>
+            <li><a href="#"></a>Collection</li>
+            <li><a href="#"></a>Portfolio</li>
+        </ul>
+        <div class="h-icons">
+            <a href="#"><ion-icon class="weare" name="heart-outline"></ion-icon></a>
+            <a href="#"><ion-icon class="weare" name="bag-outline"></ion-icon></a>
+            <a href="#"><ion-icon  class="weare" name="person-circle-outline"></ion-icon></a>
+            <div id="menu-icon"><ion-icon name="menu-outline"></ion-icon></div>
+        </div>
+    </header>
+<Section class="section1">Section 1</Section>
+<Section class="section2">Section 2</Section>
+<Section class="section3">Section 3</Section>
+<Section class="section4">Section 4</Section>
+<Section class="section5">Section 5</Section>
+
+<div class="big-menu">
+    <div class="menu">
+        <div class="toggle"><ion-icon name="grid-outline"></ion-icon></ion-icon></div>
+            <li style="--i:0;">
+                <a href="Home.html"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style="--i:1;">
+                <a href="wallet.html"><ion-icon name="wallet-outline"></ion-icon></a>
+            </li>
+            <li style="--i:2;">
+                <a href="#" class="goup"><ion-icon name="arrow-up-outline"></ion-icon></a>
+            </li>
+            <li style="--i:3;">
+                <a href="https://www.facebook.com/" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li style="--i:4;">
+                <a href="#" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li style="--i:5;">
+                <a href="account.html"><ion-icon name="log-in-outline"></ion-icon></a>
+            </li>
+            <li style="--i:6;">
+                <a href="Information.html"><ion-icon name="information-circle-outline"></ion-icon></a>
+            </li>
+            <li style="--i:7;">
+                <a href="#"><ion-icon name="chatbox-ellipses-outline"></ion-icon></a>
+            </li>
+    </div>
+</div>
+
+   
+</body>
+    <script>
+        let toggle = document.querySelector(".toggle");
+        let menu = document.querySelector(".menu");
+        toggle.onclick = function(){
+            menu.classList.toggle("active")
+        }
+        const gotop = document.querySelector(".goup");
+        let menu1 = document.querySelector("#menu-icon");
+        let navbar = document.querySelector(".navbar")
+        menu1.onclick = () => {
+            menu.classList.toggle("bx-x");
+            navbar.classList.toggle("hoatdong");
+        }
+    </script>
+</html>
